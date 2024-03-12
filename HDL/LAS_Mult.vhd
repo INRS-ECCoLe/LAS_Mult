@@ -1,3 +1,24 @@
+---------------------------------------------------------------------------------------------------
+--                __________
+--    ______     /   ________      _          ______
+--   |  ____|   /   /   ______    | |        |  ____|
+--   | |       /   /   /      \   | |        | |
+--   | |____  /   /   /        \  | |        | |____
+--   |  ____| \   \   \        /  | |        |  ____|   
+--   | |       \   \   \______/   | |        | |
+--   | |____    \   \________     | |_____   | |____
+--   |______|    \ _________      |_______|  |______|
+--
+--  Edge Computing, Communication and Learning Lab (ECCoLe) 
+--
+--  Author: Shervin Vakili, INRS University
+--  Project: LAS Multiplier
+--  Creation Date: 2024-02-10
+--  Module Name: las_mult - Behavioral 
+--  Description: LUT-aware segmentatation (LAS) exact multiplier for AMD-Xilinx FPGAs
+---------------------------------------------------------------------------------------------------
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 --use IEEE.STD_LOGIC_SIGNED.ALL;
