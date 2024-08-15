@@ -98,16 +98,16 @@ begin
             result_o => result_temp1
         );
 
-        result_temp2(7 downto 3) <= b(4 downto 0) when a(3)='1' else (others=>'0'); 
+        result_temp2(7 downto 3) <= a(4 downto 0) when b(3)='1' else (others=>'0'); 
         result_temp2(2 downto 0) <= (others => '0');
 
-        result_temp3(8 downto 4) <= b(4 downto 0) when a(4)='1' else (others=>'0'); 
+        result_temp3(8 downto 4) <= a(4 downto 0) when b(4)='1' else (others=>'0'); 
         result_temp3(3 downto 0) <= (others => '0');
 
-        result_temp4(2 downto 0) <= a(2 downto 0) when b(3)='1' else (others=>'0'); 
+        result_temp4(2 downto 0) <= b(2 downto 0) when a(3)='1' else (others=>'0'); 
         --result_temp4(2 downto 0) <= (others => '0');
 
-        result_temp5(2 downto 0) <= a(2 downto 0) when b(4)='1' else (others=>'0'); 
+        result_temp5(2 downto 0) <= b(2 downto 0) when a(4)='1' else (others=>'0'); 
         --result_temp5(3 downto 0) <= (others => '0');
 
         result_temp6  <= ("00"   & result_temp2) + 
@@ -116,7 +116,7 @@ begin
                         --("000"  & result_temp5) +
                         ("0000" & result_temp1);
                         
-        result_temp7  <= ('0' &result_temp4 & '0') + ("00" & result_temp5);
+        result_temp7  <= ('0' &result_temp5 & '0') + ("00" & result_temp4);
         
         result_temp(9 downto 3) <= result_temp6(9 downto 3)+result_temp7;
         result_temp(2 downto 0) <= result_temp6(2 downto 0);

@@ -35,7 +35,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Ordinary_Unsigned_Mult is
-    generic(LENGTH : integer:= 4;
+    generic(LENGTH : integer:= 6;
             INOUT_BUF_EN : boolean:= True);
     Port ( a : in unsigned(LENGTH-1 downto 0);  -- Mult input 1
            b : in unsigned(LENGTH-1 downto 0);    -- Mult input 2

@@ -9,8 +9,8 @@ use IEEE.std_logic_arith.ALL;
 --use UNISIM.VComponents.all;
 
 entity shift_add_mult is
-    generic(BITWIDTH : INTEGER:= 9;   -- which solution (part of partial products) to be used for accuracy refinement
-            INOUT_BUF_EN : BOOLEAN:= True);
+    generic(BITWIDTH : INTEGER:= 5;   -- which solution (part of partial products) to be used for accuracy refinement
+            INOUT_BUF_EN : BOOLEAN:= False);
     Port ( a_i : in STD_LOGIC_VECTOR(BITWIDTH-1 downto 0);  -- Mult input 1
            b_i : in STD_LOGIC_VECTOR(BITWIDTH-1 downto 0);  -- Mult input 2
            clk, rst : in STD_LOGIC;
